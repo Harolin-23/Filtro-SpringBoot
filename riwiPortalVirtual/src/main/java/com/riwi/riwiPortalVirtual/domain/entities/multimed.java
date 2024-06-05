@@ -27,7 +27,7 @@ import lombok.NoArgsConstructor;
 public class multimed {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_multimedy;
+    private long id_multimedy;
     @Enumerated(EnumType.STRING)
     private typeDateEnum type;
     @Lob

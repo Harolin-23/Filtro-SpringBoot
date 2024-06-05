@@ -30,7 +30,7 @@ public class ClassRiwi {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_class;
+    private long  id_class;
     @Column(length = 255,nullable = false)
     private String name;
     @Lob
