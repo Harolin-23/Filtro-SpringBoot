@@ -86,6 +86,7 @@ public class studentsService implements IstudentsService{
             .orElseThrow(()-> new BadRequestException("No hay clases con el id suministrado"));
     }
 
+    
 
      private studenResponse responseToEntity(student entity) {
 
@@ -109,7 +110,6 @@ public class studentsService implements IstudentsService{
         ClassRiwi clase = classRepository.findById(request.getId_class()).orElseThrow(() -> new BadRequestException("clase no encontrado"));
 
         return
-
         student.builder()
         .name(request.getName())
         .email(request.getEmail())
