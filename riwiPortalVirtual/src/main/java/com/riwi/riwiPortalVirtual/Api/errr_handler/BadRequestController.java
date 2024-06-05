@@ -18,7 +18,7 @@ import com.riwi.riwiPortalVirtual.Api.dto.error.ErrorResp;
 
 @RestControllerAdvice
 @ResponseStatus(code = HttpStatus.BAD_REQUEST)
-public class BasRequestController {
+public class BadRequestController {
        
  @ExceptionHandler(MethodArgumentNotValidException.class)
     public BaseErrorResponse handleBadRequest(MethodArgumentNotValidException exception){
