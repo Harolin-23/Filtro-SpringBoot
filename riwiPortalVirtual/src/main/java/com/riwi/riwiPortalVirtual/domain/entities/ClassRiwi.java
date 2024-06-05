@@ -16,7 +16,9 @@ import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 
 
@@ -41,12 +43,20 @@ public class ClassRiwi {
     private boolean active;
 
 
+    
     @OneToMany(mappedBy = "id_class", cascade = CascadeType.ALL, orphanRemoval = false)
     @JsonManagedReference
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private List<student> students;
 
-    @OneToMany(mappedBy = "id_class", cascade = CascadeType.ALL, orphanRemoval = false)
+
+
+
     @JsonManagedReference
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @OneToMany(mappedBy = "id_class", cascade = CascadeType.ALL, orphanRemoval = false)
     private List<lesson> lessons;
 
 

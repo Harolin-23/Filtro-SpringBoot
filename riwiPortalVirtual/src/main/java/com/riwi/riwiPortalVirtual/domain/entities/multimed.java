@@ -39,6 +39,7 @@ public class multimed {
     private boolean active;
 
  
+    
     @ManyToOne
     @JoinColumn(name = "id_lesson", nullable = true)
     private lesson id_lesson;
