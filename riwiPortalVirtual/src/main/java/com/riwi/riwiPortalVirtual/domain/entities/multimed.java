@@ -11,7 +11,9 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Lob;
+import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -34,5 +36,11 @@ public class multimed {
     private LocalDateTime create_at = LocalDateTime.now();
     @Column(nullable = false)
     private boolean active;
+
+ 
+    @ManyToOne
+    @JoinColumn(name = "id_lesson", nullable = true)
+    private lesson id_lesson;
+
 
 }
