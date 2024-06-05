@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-RiwiPortalVirtualApplication<riwiPortalVirtual>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.riwi.riwiPortalVirtual.RiwiPortalVirtualApplication",
+            "projectName": "riwiPortalVirtual",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
