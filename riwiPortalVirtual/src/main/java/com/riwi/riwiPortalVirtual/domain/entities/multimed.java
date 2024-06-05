@@ -28,6 +28,7 @@ public class multimed {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id_multimedy;
+    
     @Enumerated(EnumType.STRING)
     private typeDateEnum type;
     @Lob
