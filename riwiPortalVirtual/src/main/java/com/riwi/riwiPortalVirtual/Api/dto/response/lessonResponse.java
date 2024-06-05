@@ -1,8 +1,10 @@
 package com.riwi.riwiPortalVirtual.Api.dto.response;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import com.riwi.riwiPortalVirtual.domain.entities.ClassRiwi;
+import com.riwi.riwiPortalVirtual.domain.entities.multimed;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,4 +22,6 @@ public class lessonResponse {
     private LocalDateTime create_at;
     private boolean active;
     private ClassRiwi id_class;
+    private List<multimed> multimedia;
+
 }
